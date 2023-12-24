@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id = "myBtn">
+        Buton 1
+    </button>
+    <button id = "myBtn2" onclick="alert('Buton 2 basıldı')">
+        Buton 2
+    </button>
+    <button id = "myBtn3" onclick="btn3Click();">
+        Buton 3
+    </button>
+    <script>
+      document.getElementById("myBtn").onclick = function(){
+        alert('Buton 1 basıldı');
+      }
+      function btn3Click(){
+        alert('Buton 3 basıldı');
+      }
+      let liste = document.getElementsByTagName("button");
+      console.log(liste);
+    </script>
+</body>
+</html>
